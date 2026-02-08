@@ -1,0 +1,4 @@
+<menu id="MainMenu">
+    <menu-item id="refresh" label="Refresh Now" />
+    <menu-item id="settings" label="Settings" />
+</menu>

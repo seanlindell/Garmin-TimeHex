@@ -1,0 +1,8 @@
+<drawables>
+    <bitmap id="LauncherIcon" filename="lucina_icon.png" />
+    <bitmap id="BatteryFull" filename="BatteryFull.png" />
+    <bitmap id="BatteryHigh" filename="BatteryHigh.png" />
+    <bitmap id="BatteryMedium" filename="BatteryMedium.png" />
+    <bitmap id="BatteryLow" filename="BatteryLow.png" />
+    <bitmap id="BatteryCritical" filename="BatteryCritical.png" />
+</drawables>
