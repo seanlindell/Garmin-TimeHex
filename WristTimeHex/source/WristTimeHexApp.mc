@@ -11,7 +11,7 @@ using Toybox.PersistedContent;
 class WristTimeHex extends Application.AppBase {
     // App-level variables
     private var mView;
-    private var mModel;ß
+    private var mModel;
     private var mPollingTimer;
     
     // API configuration
