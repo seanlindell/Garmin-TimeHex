@@ -50,36 +50,36 @@ class WristTimeHexView extends WatchUi.View {
         setLayout(Rez.Layouts.MainLayout(dc));
         
         // Get references to text fields
-        mTaskNameText = View.findDrawableById("TaskName");
-        mTimerText = View.findDrawableById("TimerValue");
-        mStatusText = View.findDrawableById("StatusText");
-        mCurrentTimeText = View.findDrawableById("CurrentTime");
+        mTaskNameText = View.findDrawableById("TaskName") as WatchUi.Text;
+        mTimerText = View.findDrawableById("TimerValue") as WatchUi.Text;
+        mStatusText = View.findDrawableById("StatusText") as WatchUi.Text;
+        mCurrentTimeText = View.findDrawableById("CurrentTime") as WatchUi.Text;
 
-        mCurrentDayOfWeekText = View.findDrawableById("CurrentDayOfWeek");
-        mCurrentDateText = View.findDrawableById("CurrentDate");
-        mCurrentPercentageText = View.findDrawableById("CurrentPercentage");
-
-
-        mFirstPercentageText = View.findDrawableById("FirstPercentage");
-        mFirstPercentageDateText = View.findDrawableById("FirstPercentageDate");
-
-        mSecondPercentageText = View.findDrawableById("SecondPercentage");
-        mSecondPercentageDateText = View.findDrawableById("SecondPercentageDate");
-
-        mThirdPercentageText = View.findDrawableById("ThirdPercentage");
-        mThirdPercentageDateText = View.findDrawableById("ThirdPercentageDate");
-
-        mFourthPercentageText = View.findDrawableById("FourthPercentage");
-        mFourthPercentageDateText = View.findDrawableById("FourthPercentageDate");
-
-        mFifthPercentageText = View.findDrawableById("FifthPercentage");
-        mFifthPercentageDateText = View.findDrawableById("FifthPercentageDate");
-
-        mSixthPercentageText = View.findDrawableById("SixthPercentage");
-        mSixthPercentageDateText = View.findDrawableById("SixthPercentageDate");
+        mCurrentDayOfWeekText = View.findDrawableById("CurrentDayOfWeek") as WatchUi.Text;
+        mCurrentDateText = View.findDrawableById("CurrentDate") as WatchUi.Text;
+        mCurrentPercentageText = View.findDrawableById("CurrentPercentage") as WatchUi.Text;
 
 
-        mBatteryPercentageText = View.findDrawableById("BatteryPercentage");
+        mFirstPercentageText = View.findDrawableById("FirstPercentage") as WatchUi.Text;
+        mFirstPercentageDateText = View.findDrawableById("FirstPercentageDate") as WatchUi.Text;
+
+        mSecondPercentageText = View.findDrawableById("SecondPercentage") as WatchUi.Text;
+        mSecondPercentageDateText = View.findDrawableById("SecondPercentageDate") as WatchUi.Text;
+
+        mThirdPercentageText = View.findDrawableById("ThirdPercentage") as WatchUi.Text;
+        mThirdPercentageDateText = View.findDrawableById("ThirdPercentageDate") as WatchUi.Text;
+
+        mFourthPercentageText = View.findDrawableById("FourthPercentage") as WatchUi.Text;
+        mFourthPercentageDateText = View.findDrawableById("FourthPercentageDate") as WatchUi.Text;
+
+        mFifthPercentageText = View.findDrawableById("FifthPercentage") as WatchUi.Text;
+        mFifthPercentageDateText = View.findDrawableById("FifthPercentageDate") as WatchUi.Text;
+
+        mSixthPercentageText = View.findDrawableById("SixthPercentage") as WatchUi.Text;
+        mSixthPercentageDateText = View.findDrawableById("SixthPercentageDate") as WatchUi.Text;
+
+
+        mBatteryPercentageText = View.findDrawableById("BatteryPercentage") as WatchUi.Text;
         
         // Initialize with default values
         mTaskNameText.setText("No Task");

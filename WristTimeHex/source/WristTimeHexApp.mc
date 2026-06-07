@@ -4,12 +4,14 @@ using Toybox.System;
 using Toybox.Timer;
 using Toybox.Communications;
 using Toybox.Attention;
+using Toybox.Lang;
+using Toybox.PersistedContent;
 
 
 class WristTimeHex extends Application.AppBase {
     // App-level variables
     private var mView;
-    private var mModel;
+    private var mModel;ß
     private var mPollingTimer;
     
     // API configuration
@@ -86,8 +88,8 @@ class WristTimeHex extends Application.AppBase {
     }
 
     // Process API response - keep this as a separate method
-    function onTimerDataReceived(responseCode, data) {
-        
+    function onTimerDataReceived(responseCode as Lang.Number, data as Null or Lang.Dictionary or Lang.String or Toybox.PersistedContent.Iterator) as Void {
+
         if (responseCode == 200) {
             // Successful response
             if (data != null) {
@@ -105,7 +107,7 @@ class WristTimeHex extends Application.AppBase {
         }
     }
 
-    function onPercentageDataReceived(responseCode, data) {
+    function onPercentageDataReceived(responseCode as Lang.Number, data as Null or Lang.Dictionary or Lang.String or Toybox.PersistedContent.Iterator) as Void {
         mView.showLoading(false);
 
         if (responseCode == 200) {
