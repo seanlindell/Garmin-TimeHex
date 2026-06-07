@@ -174,18 +174,18 @@ class TimerModel {
     
     // Update model from API response
     function updateFromApiResponse(data) {
-        isRunning = data.get("is_running");
-        taskName = data.get("time_bucket_name");
-        taskCode = data.get("code");
-        taskColor = data.get("time_bucket_color");
+        isRunning = data.get("IsRunning");
+        taskName = data.get("TimeBucketName");
+        taskCode = data.get("Code");
+        taskColor = data.get("TimeBucketColor");
         
         if (isRunning) {
-            if (data.hasKey("start_time")) {
-                startTimeStamp = data.get("start_time");
+            if (data.hasKey("StartTime")) {
+                startTimeStamp = data.get("StartTime");
             }
             
-            if (data.hasKey("duration")) {
-                elapsedSeconds = data.get("duration").toNumber();
+            if (data.hasKey("Duration")) {
+                elapsedSeconds = data.get("Duration").toNumber();
             }
         } else {
             elapsedSeconds = 0;
